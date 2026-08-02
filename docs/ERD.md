@@ -113,6 +113,4 @@ erDiagram
     USERS {
         uuid id PK
         citext email
-        citext username
-        text
-        boolean is
+        c
