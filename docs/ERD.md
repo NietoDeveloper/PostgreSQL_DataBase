@@ -171,5 +171,3 @@ erDiagram
         jsonb value
     }
 ```
-
-`ATTACHMENTS` uses a polymorphic pattern (`owner_table` + `owner_id`) so it can
