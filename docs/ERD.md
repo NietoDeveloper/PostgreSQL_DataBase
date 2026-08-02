@@ -157,5 +157,3 @@ erDiagram
         text record_id
         text action
         jsonb old_data
-        jsonb new_data
-    }
