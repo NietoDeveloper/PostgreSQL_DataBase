@@ -155,4 +155,3 @@ erDiagram
         bigserial id PK
         text table_name
         text record_id
-        text action
