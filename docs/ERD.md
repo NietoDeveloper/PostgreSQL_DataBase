@@ -119,5 +119,3 @@ erDiagram
         boolean is_verified
         timestamptz deleted_at
     }
-
-    ROL
