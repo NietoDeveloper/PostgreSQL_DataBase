@@ -108,7 +108,4 @@ erDiagram
         uuid id PK
         citext email
         citext use
-        text password_hash
-        boolean is_active
-
 
