@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=240&section=header&text=POSTGRESQL%20DB&fontSize=80&fontColor=FFD700&fontAlignY=42&desc=⚡%20Generic%20Starter%20Schema%20·%20RBAC%20%2B%20Audit%20Trail%20·%20Docker%20Powered&descAlignY=62&descColor=DCDCDC&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=240&section=header&text=POSTGRESQL%20DB&fontSize=80&fontColor=FFD700&fontAlignY=42&desc=⚡%20Functional%20Starter%20Schema%20·%20RBAC%20%2B%20Audit%20Trail%20·%20Docker%20Powered&descAlignY=62&descColor=DCDCDC&animation=fadeIn" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&duration=2800&pause=900&color=FFD700&center=true&vCenter=true&width=760&lines=%E2%9A%A1+Production-Grade+PostgreSQL+Foundation;%F0%9F%90%B3+Fully+Dockerized+%7C+Zero+Local+Dependencies;%F0%9F%94%92+Built-In+RBAC+%2B+Automatic+Audit+Trail;%F0%9F%93%A6+ORM-Agnostic+%7C+Plain+SQL+Migrations;%F0%9F%94%84+Polymorphic+Attachments+%7C+Soft+Deletes;%F0%9F%9A%80+Drop-In+Foundation+for+Any+New+Project;%F0%9F%8F%86+%231+GitHub+Committer+in+Colombia)](https://git.io/typing-svg)
 
@@ -35,9 +35,9 @@
 
 <br/>
 
-> **Generic PostgreSQL Starter Database:** *The identity, access-control, and audit foundation meant to be dropped into any new project — MERN, Next.js, or otherwise.*
+> **Functional PostgreSQL Starter Database:** *The identity, access-control, and audit foundation meant to be dropped into any new project — MERN, Next.js, or otherwise.*
 
-> 🐘 **PostgreSQL Generic Starter Schema.** A small, dependency-free, enterprise-grade foundation built with plain SQL migrations and PL/pgSQL, delivering authentication, role-based access control, automatic audit trails, polymorphic file attachments, notifications, and a settings store out of the box.
+> 🐘 **PostgreSQL Functional Starter Schema.** A small, dependency-free, enterprise-grade foundation built with plain SQL migrations and PL/pgSQL, delivering authentication, role-based access control, automatic audit trails, polymorphic file attachments, notifications, and a settings store out of the box.
 > State-of-the-art schema design for real-time auditability and reusable data orchestration across **any** Digital Twin, e-commerce, or SaaS ecosystem. A production-grade, ORM-agnostic foundation connecting new projects to a scalable, secure, Dockerized database — in minutes, not days.
 >
 > *Modular · Robust · Obsessively Production-Ready · Built in Bogotá 🇨🇴*
@@ -50,16 +50,16 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=600&size=16&duration=3200&pause=1200&color=DCDCDC&center=true&vCenter=true&width=820&lines=%F0%9F%9B%A1%EF%B8%8F+Generic+RBAC%3A+Roles+%2B+Permissions+%2B+Sessions;%F0%9F%A7%BE+Automatic+Audit+Log+via+Reusable+PL%2FpgSQL+Trigger;%F0%9F%93%8E+Polymorphic+Attachments+%E2%80%94+Any+File%2C+Any+Table;%E2%99%BB%EF%B8%8F+Soft+Deletes+%2B+Auto-Maintained+updated_at" alt="Recent updates typing animation"/>
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=600&size=16&duration=3200&pause=1200&color=DCDCDC&center=true&vCenter=true&width=820&lines=%F0%9F%9B%A1%EF%B8%8F+Functional+RBAC%3A+Roles+%2B+Permissions+%2B+Sessions;%F0%9F%A7%BE+Automatic+Audit+Log+via+Reusable+PL%2FpgSQL+Trigger;%F0%9F%93%8E+Polymorphic+Attachments+%E2%80%94+Any+File%2C+Any+Table;%E2%99%BB%EF%B8%8F+Soft+Deletes+%2B+Auto-Maintained+updated_at" alt="Recent updates typing animation"/>
 
 </div>
 
-The initial release cycle of the Generic PostgreSQL Starter Database introduced the following architectural and infrastructure decisions:
+The initial release cycle of the Functional PostgreSQL Starter Database introduced the following architectural and infrastructure decisions:
 
 | Update | Description | Impact |
 |:-------|:-------------|:-------|
 | 🔐 **Core Identity & RBAC** | `users`, `roles`, `permissions`, `role_permissions`, `user_roles`, and `sessions` tables — a complete, reusable auth foundation | Drop-in login/access-control layer for any new project, no rewrite needed |
-| 🧾 **Generic Audit Trail** | Reusable `audit_row_change()` PL/pgSQL trigger function capturing before/after JSONB snapshots into `audit_log` | Full accountability on any table with a single `CREATE TRIGGER` statement |
+| 🧾 **Functional Audit Trail** | Reusable `audit_row_change()` PL/pgSQL trigger function capturing before/after JSONB snapshots into `audit_log` | Full accountability on any table with a single `CREATE TRIGGER` statement |
 | 📎 **Polymorphic Attachments** | `owner_table` + `owner_id` pattern lets any record in any table hold files without a dedicated join table | Faster iteration — no schema migration needed per new entity |
 | ♻️ **Soft Deletes & Auto Timestamps** | `deleted_at` on sensitive tables, `updated_at` auto-maintained via trigger, never touched manually | History and audit integrity preserved by default |
 
@@ -149,7 +149,7 @@ PostgreSQL_DataBase/                ← Repo Root
 
 ## ✨ Core Design Flows
 
-### 🔄 Generic Audit Trail Pipeline
+### 🔄 Functional Audit Trail Pipeline
 
 ```mermaid
 flowchart LR
@@ -244,7 +244,7 @@ docker compose up -d
 ```
 🤖 What Docker does automatically:
    ├── Pulls postgres:16-alpine (lightweight, official image)
-   ├── Creates the app_user role & generic_db database
+   ├── Creates the app_user role & functional_db database
    ├── Applies every file in migrations/ on first boot
    ├── Wires the PL/pgSQL trigger layer (audit + timestamps)
    └── Seeds baseline roles & permissions
@@ -256,7 +256,7 @@ To apply migrations against an **existing** database instead of a fresh
 container:
 
 ```bash
-export DATABASE_URL=postgresql://app_user:change_me@localhost:5432/generic_db
+export DATABASE_URL=postgresql://app_user:change_me@localhost:5432/functional_db
 ./scripts/init.sh
 ```
 
@@ -361,7 +361,7 @@ CREATE TRIGGER trg_orders_audit
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
-*PostgreSQL Generic Starter Database — Built by **NietoDeveloper · Manuel Nieto***
+*PostgreSQL Functional Starter Database — Built by **NietoDeveloper · Manuel Nieto***
 
 *Developed with technical rigor in* 📍 **Bogotá, Colombia** 🇨🇴
 
