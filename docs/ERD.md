@@ -107,7 +107,7 @@ erDiagram
     USERS ||--o{ SESSIONS : opens
     USERS ||--o{ NOTIFICATIONS : receives
     USERS ||--o{ ATTACHMENTS : 
-    USERS ||--o{ A
+
 
         uuid id PK
         citext email
