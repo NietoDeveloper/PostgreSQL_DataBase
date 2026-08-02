@@ -121,6 +121,4 @@ erDiagram
     }
 
     ROLES {
-        smallserial id PK
-        citext name
-    }
+        smallserial id P
