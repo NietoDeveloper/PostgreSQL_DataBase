@@ -127,5 +127,3 @@ erDiagram
 
     PERMISSIONS {
         smallserial id PK
-        citext code
-    }
