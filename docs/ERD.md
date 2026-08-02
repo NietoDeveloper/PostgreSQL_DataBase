@@ -102,5 +102,4 @@ entity — this is what makes the schema reusable across projects.
 erDiagram
     USERS ||--o{ USER_ROLES : has
     ROLES ||--o{ USER_ROLES : assigned_to
-    ROLES ||--o{ ROLE_PERMISSIONS : has
-    PERMISSIONS ||--o
+    ROLES ||--o{ ROLE_PERMISSION
