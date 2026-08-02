@@ -156,4 +156,3 @@ erDiagram
         text table_name
         text record_id
         text action
-        jsonb old_data
