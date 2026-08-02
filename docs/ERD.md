@@ -135,7 +135,3 @@ erDiagram
         uuid user_id FK
         text refresh_token
         timestamptz expires_at
-    }
-
-    ATTACHMENTS {
-        uuid id PK
