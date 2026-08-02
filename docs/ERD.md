@@ -100,9 +100,23 @@ entity — this is what makes the schema reusable across projects.
 
 ```mermaid
 erDiagram
-    USERS ||--o{ USER_ROLES 
+    USERS ||--o{ USER_ROLES : has
     ROLES ||--o{ USER_ROLES : assigned_to
-    ROLES ||--o{ ROLE_PERMISSIONS : ha
-    PERMISSIONS ||--o{ ROLE_PERMISSION
-    USERS ||--o{ SESSIONS : 
-    USERS ||--o{ NOT
+    ROLES ||--o{ ROLE_PERMISSIONS : has
+    PERMISSIONS ||--o{ ROLE_PERMISSIONS : granted_via
+    USERS ||--o{ SESSIONS : opens
+    USERS ||--o{ NOTIFICATIONS : receives
+    USERS ||--o{ USER_SETTINGS : configures
+    USERS ||--o{ ATTACHMENTS : uploads
+    USERS ||--o{ AUDIT_LOG : triggers
+
+    USERS {
+        uuid id PK
+        citext email
+        citext username
+        text password_hash
+        boolean is_active
+        boolean is_verified
+        timestamptz deleted_at
+    }
+
