@@ -132,4 +132,4 @@ erDiagram
 
     SESSIONS {
         uuid id PK
-        uuid user_id FK
+        uuid user
