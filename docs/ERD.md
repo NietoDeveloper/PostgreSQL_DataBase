@@ -121,4 +121,4 @@ erDiagram
     }
 
     ROLES {
-        smallserial id P
+        smallserial 
