@@ -95,7 +95,3 @@ entity — this is what makes the schema reusable across projects.
 
 
 
-
-# Entity Relationship Diagram
-
-```mermaid
