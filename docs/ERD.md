@@ -105,4 +105,4 @@ erDiagram
     ROLES ||--o{ ROLE_PERMISSIONS : has
     PERMISSIONS ||--o{ ROLE_PERMISSIONS : granted_via
     USERS ||--o{ SESSIONS : o
-    USERS ||--o{ NOTIFICATIONS : re
+    USERS ||--o{ NOTIFICATIONS : r
