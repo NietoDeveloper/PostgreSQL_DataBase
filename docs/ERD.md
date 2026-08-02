@@ -164,5 +164,3 @@ erDiagram
         text key PK
         jsonb value
     }
-
-    USER_SETTINGS {
