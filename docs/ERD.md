@@ -143,5 +143,3 @@ erDiagram
         text owner_id
         text file_url
     }
-
-    NOTIFICATIONS {
