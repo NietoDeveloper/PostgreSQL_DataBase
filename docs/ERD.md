@@ -120,4 +120,4 @@ erDiagram
         timestamptz deleted_at
     }
 
-    ROLES {
+    ROL
