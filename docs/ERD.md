@@ -121,4 +121,4 @@ erDiagram
     }
 
     ROLES {
-        smallserial 
+        smal
