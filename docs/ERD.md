@@ -107,5 +107,4 @@ erDiagram
     USERS ||--o{ SESSIONS : opens
         uuid id PK
         citext email
-        citext use
-
+        citext 
