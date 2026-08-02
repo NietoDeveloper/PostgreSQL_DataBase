@@ -168,6 +168,3 @@ erDiagram
     USER_SETTINGS {
         uuid user_id FK
         text key
-        jsonb value
-    }
-```
