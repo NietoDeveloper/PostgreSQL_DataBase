@@ -110,6 +110,3 @@ erDiagram
     USERS ||--o{ ATTACHMENTS : uploads
     USERS ||--o{ AUDIT_LOG : triggers
 
-    USERS {
-        uuid id PK
-        citext em
