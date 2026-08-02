@@ -116,5 +116,4 @@ erDiagram
         citext username
         text password_hash
         boolean is_active
-        boolean is_verified
-        timestamptz delet
+        boolean is
