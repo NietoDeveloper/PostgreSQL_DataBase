@@ -134,4 +134,4 @@ erDiagram
         uuid id PK
         uuid user_id FK
         text refresh_token
-        timestamptz expi
+        timest
