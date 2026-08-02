@@ -129,6 +129,3 @@ erDiagram
         smallserial id PK
         citext code
     }
-
-    SESSIONS {
-        uuid user
