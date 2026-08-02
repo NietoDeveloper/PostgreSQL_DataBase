@@ -139,4 +139,4 @@ erDiagram
 
     ATTACHMENTS {
         uuid id PK
-        text owne
+        text
