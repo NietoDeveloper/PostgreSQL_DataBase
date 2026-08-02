@@ -105,4 +105,4 @@ erDiagram
     ROLES ||--o{ ROLE_PERMISSIONS : has
     PERMISSIONS ||--o{ ROLE_PERMISSIONS :
     USERS ||--o{ SESSIONS : 
-    USERS ||--o{ NOTIFIC
+    USERS ||--o{ NOT
