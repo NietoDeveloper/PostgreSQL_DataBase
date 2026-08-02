@@ -103,6 +103,6 @@ erDiagram
     USERS ||--o{ USER_ROLES 
     ROLES ||--o{ USER_ROLES : assigned_to
     ROLES ||--o{ ROLE_PERMISSIONS : ha
-    PERMISSIONS ||--o{ ROLE_PERMISSIONS :
+    PERMISSIONS ||--o{ ROLE_PERMISSION
     USERS ||--o{ SESSIONS : 
     USERS ||--o{ NOT
