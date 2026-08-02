@@ -112,4 +112,4 @@ erDiagram
 
     USERS {
         uuid id PK
-        citext email
+        citext em
