@@ -353,11 +353,11 @@ CREATE TRIGGER trg_orders_audit
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║                                                                    ║
-║   "Every schema is a foundation. Build it once,                   ║
-║    reuse it everywhere, audit it always."                         ║
-║                                                                    ║
-║                               — NietoDeveloper Standard            ║
+║                                                                  ║
+║   "Every schema is a foundation. Build it once,                  ║
+║    reuse it everywhere, audit it always."                        ║
+║                                                                  ║
+║                               — NietoDeveloper Standard          ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
