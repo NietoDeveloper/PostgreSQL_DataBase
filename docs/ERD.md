@@ -140,6 +140,3 @@ erDiagram
     ATTACHMENTS {
         uuid id PK
         text owner_table
-        text owner_id
-        text file_url
-    }
