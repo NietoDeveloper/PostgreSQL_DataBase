@@ -111,7 +111,7 @@ erDiagram
     USERS {
         uuid id PK
         citext email
-        citext username
+        citext use
         text password_hash
         boolean is_active
         boolean is_verified
