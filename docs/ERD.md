@@ -100,7 +100,7 @@ entity — this is what makes the schema reusable across projects.
 
 ```mermaid
 erDiagram
-    USERS ||--o{ USER_ROLES : has
+    USERS ||--o{ USER_ROLES 
     ROLES ||--o{ USER_ROLES : assigned_to
     ROLES ||--o{ ROLE_PERMISSIONS : has
     PERMISSIONS ||--o{ ROLE_PERMISSIONS : gra
