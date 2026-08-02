@@ -106,7 +106,6 @@ erDiagram
     PERMISSIONS ||--o{ ROLE_PERMISSIONS : granted_via
     USERS ||--o{ SESSIONS : opens
     USERS ||--o{ NOTIFICATIONS : receives
-    USERS ||--o{
     USERS ||--o{ ATTACHMENTS : uploads
     USERS ||--o{ AUDIT_LOG :
     USERS {
