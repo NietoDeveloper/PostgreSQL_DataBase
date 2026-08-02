@@ -173,4 +173,3 @@ erDiagram
 ```
 
 `ATTACHMENTS` uses a polymorphic pattern (`owner_table` + `owner_id`) so it can
-attach a file to a row in **any** table without a dedicated foreign key per
