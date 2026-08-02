@@ -159,5 +159,3 @@ erDiagram
         jsonb old_data
         jsonb new_data
     }
-
-    APP_SETTINGS {
