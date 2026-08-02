@@ -108,8 +108,7 @@ erDiagram
     USERS ||--o{ NOTIFICATIONS : receives
     USERS ||--o{ configures
     USERS ||--o{ ATTACHMENTS : uploads
-    USERS ||--o{ AUDIT_LOG : triggers
-
+    USERS ||--o{ AUDIT_LOG :
     USERS {
         uuid id PK
         citext email
