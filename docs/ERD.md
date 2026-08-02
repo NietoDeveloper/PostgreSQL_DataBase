@@ -110,7 +110,5 @@ erDiagram
         citext use
         text password_hash
         boolean is_active
-   is_ver
-        timestamptz deleted_at
-    }
+
 
