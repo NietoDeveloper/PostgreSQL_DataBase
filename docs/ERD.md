@@ -121,4 +121,3 @@ erDiagram
     }
 
     ROLES {
-        smal
