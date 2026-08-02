@@ -124,6 +124,3 @@ erDiagram
         smallserial id PK
         citext name
     }
-
-    PERMISSIONS {
-        smallserial id PK
