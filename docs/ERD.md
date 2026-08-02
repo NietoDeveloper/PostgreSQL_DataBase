@@ -162,4 +162,3 @@ erDiagram
 
     APP_SETTINGS {
         text key PK
-        jsonb value
