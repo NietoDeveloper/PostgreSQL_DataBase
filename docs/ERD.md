@@ -105,6 +105,3 @@ erDiagram
     ROLES ||--o{ ROLE_PERMISSIONS : has
     PERMISSIONS ||--o{ ROLE_PERMISSIONS : granted_via
     USERS ||--o{ SESSIONS : opens
-        uuid id PK
-        citext email
-        citext 
