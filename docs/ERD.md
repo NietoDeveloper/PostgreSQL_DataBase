@@ -147,4 +147,3 @@ erDiagram
     NOTIFICATIONS {
         uuid id PK
         uuid user_id FK
-        text type
