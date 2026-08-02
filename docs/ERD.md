@@ -150,6 +150,3 @@ erDiagram
         text type
         jsonb metadata
     }
-
-    AUDIT_LOG {
-        bigserial id PK
