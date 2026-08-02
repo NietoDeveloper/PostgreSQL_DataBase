@@ -107,6 +107,3 @@ erDiagram
     USERS ||--o{ SESSIONS : opens
     USERS ||--o{ NOTIFICATIONS : receives
     USERS ||--o{ USER_SETTINGS : configures
-    USERS ||--o{ ATTACHMENTS : uploads
-    USERS ||--o{ AUDIT_LOG : triggers
-
