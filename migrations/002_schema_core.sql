@@ -14,10 +14,6 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 
-CREATE TABLE IF NOT EXISTS permissions (
-    id          SMALLSERIAL PRIMARY KEY,
-
-
 
 CREATE TABLE IF NOT EXISTS user_roles (
     user_id UUID     NOT NULL REFERENCES users (id) ON DELETE CASCADE,
