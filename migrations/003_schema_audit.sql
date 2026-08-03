@@ -4,7 +4,3 @@
 -- across ANY table in the database (via trigger, see 007).
 -- =====================================================================
 
-CREATE TABLE IF NOT EXISTS audit_log (
-    id           BIGSERIAL PRIMARY KEY,
-    table_name   TEXT NOT NULL,
-
