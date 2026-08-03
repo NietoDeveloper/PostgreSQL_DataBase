@@ -9,7 +9,3 @@ fi
 
 MIGRATIONS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../migrations" && pwd)"
 
-for file in "$MIGRATIONS_DIR"/*.sql; do
-  echo "Applying: $(basename "$file")"
-  psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$file"
-
