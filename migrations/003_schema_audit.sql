@@ -13,7 +13,4 @@ CREATE TABLE IF NOT EXISTS audit_log (
     new_data     JSONB,
     changed_by   UUID REFERENCES users (id) ON DELETE SET NULL,
     changed_at   TIMESTAMPTZ NOT NULL DEFAULT now()
-);
 
-CREATE INDEX IF NOT EXISTS idx_audit_table_record ON audit_log (table_name, record_id);
-CREATE INDEX IF NOT EXISTS idx_audit_changed_at    ON audit_log (changed_at);
