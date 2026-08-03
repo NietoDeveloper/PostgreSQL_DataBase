@@ -12,6 +12,3 @@ if [ "$confirm" != "yes" ]; then
   echo "Aborted."
   exit 0
 fi
-
-psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
-
