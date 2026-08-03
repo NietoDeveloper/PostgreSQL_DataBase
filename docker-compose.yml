@@ -6,6 +6,3 @@ services:
     container_name: generic-postgres-db
     restart: unless-stopped
     environment:
- GRES_DB: ${POSTGRES_DB:-generic_db}
-      -
-
