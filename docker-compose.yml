@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: functional-postgres-db
+    restart: unless-stopped
+    environment:
+      # POSTGRES_USER here is the bootstrap/OWNER role used only to run
+      # migrations (Docker's entrypoint makes it a superuser). The
+      # application should connect as the separate, least-privilege
+      # `app_user` role created by scripts/create_app_role.sh — never
+      # as this one.
+      POSTGRES_USER: ${POSTGRES_USER:-db_owner}
+      # No default password on purpose: compose refuses to start rather
+      # than fall back to a weak, predictable one.
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a strong POSTGRES_PASSWORD in .env — no default is provided}
+      POSTGRES_DB: ${POSTGRES_DB:-functional_db}
+    ports:
+      # Bound to localhost only by default — do not publish 0.0.0.0 in
+      # any environment reachable from outside your machine/VPC.
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-db_owner}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M
+
+volumes:
+  pgdata:
