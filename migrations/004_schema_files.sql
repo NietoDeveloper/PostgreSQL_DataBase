@@ -9,5 +9,3 @@ CREATE TABLE IF NOT EXISTS attachments (
     owner_table   TEXT NOT NULL,          -- e.g. 'users', 'orders'
     owner_id      TEXT NOT NULL,          -- polymorphic FK (cast as needed)
   url      TEXT NOT NULL,
-  
-);
