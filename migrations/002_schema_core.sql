@@ -21,11 +21,6 @@ CREATE TABLE IF NOT EXISTS permissions (
     created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE TABLE IF NOT EXISTS role_permissions (
-    role_id       SMALLINT NOT NULL REFERENCES roles (id) ON DELETE CASCADE,
-    permission_id SMALLINT NOT NULL REFERENCES permissions (id) ON DELETE CASCADE,
-    PRIMARY KEY (role_id, permission_id)
-);
 
 CREATE TABLE IF NOT EXISTS user_roles (
     user_id UUID     NOT NULL REFERENCES users (id) ON DELETE CASCADE,
