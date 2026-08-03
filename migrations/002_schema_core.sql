@@ -10,9 +10,6 @@ CREATE TABLE IF NOT EXISTS users (
     username        CITEXT UNIQUE,
     password_hash   TEXT NOT NULL,
     full_name       TEXT,
-    is_active       BOOLEAN NOT NULL DEFAULT TRUE,
-    is_verified     BOOLEAN NOT NULL DEFAULT FALSE,
-    last_login_at   TIMESTAMPTZ,
 
 );
 
