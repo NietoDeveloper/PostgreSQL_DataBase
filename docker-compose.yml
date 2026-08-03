@@ -5,4 +5,3 @@ services:
     image: postgres:16-alpine
     container_name: generic-postgres-db
     restart: unless-stopped
-    environment:
