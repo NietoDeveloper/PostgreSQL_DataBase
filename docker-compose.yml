@@ -6,9 +6,7 @@ services:
     container_name: generic-postgres-db
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-app_user}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-app_password}
-      POSTGRES_DB: ${POSTGRES_DB:-generic_db}
+ GRES_DB: ${POSTGRES_DB:-generic_db}
     ports:
       -
 
