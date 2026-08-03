@@ -16,10 +16,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS permissions (
     id          SMALLSERIAL PRIMARY KEY,
-    code        CITEXT UNIQUE NOT NULL,   -- e.g. 'users.read', 'orders.write'
-    description TEXT,
-    created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
-);
+
 
 
 CREATE TABLE IF NOT EXISTS user_roles (
