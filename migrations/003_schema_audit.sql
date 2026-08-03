@@ -9,6 +9,4 @@ CREATE TABLE IF NOT EXISTS audit_log (
     table_name   TEXT NOT NULL,
     record_id    TEXT NOT NULL,
     action       TEXT NOT NULL CHECK (action IN ('INSERT', 'UPDATE', 'DELETE')),
-    old_data     JSONB,
-    new_data     JSONB,
 
