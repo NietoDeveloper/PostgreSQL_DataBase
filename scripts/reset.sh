@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 # DANGER: drops the public schema and re-applies all migrations from scratch.
-set -euo pipefail
-
-if [ -z "${DATABASE_URL:-}" ]; then
-
+set -euo pipefai
