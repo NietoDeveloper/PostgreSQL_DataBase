@@ -1,4 +1,0 @@
--- =====================================================================
--- 001_extensions.sql
--- Required PostgreSQL extensions.
--- ===  -- case-insensitive text (emails)EATE EXTENSION IF NOT EXISTS "pg_trgm";    -- fuzzy / partial text search
