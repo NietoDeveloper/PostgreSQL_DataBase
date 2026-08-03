@@ -15,4 +15,3 @@ fi
 
 psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
 
-"$(dirname "${BASH_SOURCE[0]}")/init.sh"
