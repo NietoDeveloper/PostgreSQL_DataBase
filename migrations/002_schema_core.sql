@@ -4,12 +4,6 @@
 -- Generic enough to be reused across projects.
 -- =====================================================================
 
-CREATE TABLE IF NOT EXISTS users (
-    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    email           CITEXT UNIQUE NOT NULL,
-    username        CITEXT UNIQUE,
-    password_hash   TEXT NOT NULL,
-    full_name       TEXT,
 
 );
 
