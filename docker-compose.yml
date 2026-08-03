@@ -7,6 +7,5 @@ services:
     restart: unless-stopped
     environment:
  GRES_DB: ${POSTGRES_DB:-generic_db}
-    ports:
       -
 
