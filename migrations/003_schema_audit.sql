@@ -7,6 +7,4 @@
 CREATE TABLE IF NOT EXISTS audit_log (
     id           BIGSERIAL PRIMARY KEY,
     table_name   TEXT NOT NULL,
-    record_id    TEXT NOT NULL,
-    action       TEXT NOT NULL CHECK (action IN ('INSERT', 'UPDATE', 'DELETE')),
 
