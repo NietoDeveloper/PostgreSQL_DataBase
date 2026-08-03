@@ -15,11 +15,6 @@ CREATE TABLE IF NOT EXISTS users (
 
 
 
-CREATE TABLE IF NOT EXISTS user_roles (
-    user_id UUID     NOT NULL REFERENCES users (id) ON DELETE CASCADE,
-    role_id SMALLINT NOT NULL REFERENCES roles (id) ON DELETE CASCADE,
-    PRIMARY KEY (user_id, role_id)
-);
 
 -- Refresh / access tokens for auth sessions (JWT-friendly)
 CREATE TABLE IF NOT EXISTS sessions (
