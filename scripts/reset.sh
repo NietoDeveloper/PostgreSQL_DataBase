@@ -10,5 +10,3 @@ fi
 read -p "This will DROP all data. Type 'yes' to continue: " confirm
 if [ "$confirm" != "yes" ]; then
   echo "Aborted."
-  exit 0
-fi
