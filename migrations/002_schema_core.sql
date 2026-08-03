@@ -16,12 +16,6 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE INDEX IF NOT EXISTS idx_users_deleted_at ON users (deleted_at);
 CREATE INDEX IF NOT EXISTS idx_users_is_active   ON users (is_active) WHERE deleted_at IS NULL;
 
-CREATE TABLE IF NOT EXISTS roles (
-    id          SMALLSERIAL PRIMARY KEY,
-    name        CITEXT UNIQUE NOT NULL,
-    description TEXT,
-    created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
-);
 
 CREATE TABLE IF NOT EXISTS permissions (
     id          SMALLSERIAL PRIMARY KEY,
